@@ -2,7 +2,7 @@
 /*
  * El codigo funciona mayormente con ifs, ademas de que se agregaron scanner para que
  * el usuario ingrese piedra, papel o tijera, ademas de que se agrego un int
- * resultado que es equivalente a 0
+ * resultado que es equivalente a 1
  * 
  * */
 import java.util.Scanner;
