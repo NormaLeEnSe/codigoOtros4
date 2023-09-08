@@ -19,38 +19,46 @@ public class revision4 {
         Scanner scannerPlayer2 = new Scanner(System.in); // se ajustaron los nombres, se agrego otro scanner
         String player2 = scannerPlayer2.nextLine();
 
-        int resultado = 0; //se agrega el valor del resultado
+        int resultado = 1; // Se agrega el valor del resultado
 
-        switch (player1) { //modifique todo el swirch
+        switch (player1) { // Modifico el switch
             case "piedra":
                 if (player2.equals("tijeras")) {
-                    resultado =1;
+                    resultado = 2;
+                } else if (player2.equals("piedra")) {
+                    resultado = 3; // Empate
                 }
                 break;
 
             case "papel":
                 if (player2.equals("piedra")) {
-                    resultado =1;
+                    resultado = 2;
+                } else if (player2.equals("papel")) {
+                    resultado = 3; // Empate
                 }
                 break;
 
             case "tijeras":
                 if (player2.equals("papel")) {
-                    resultado =1;
+                    resultado = 2;
+                } else if (player2.equals("tijeras")) {
+                    resultado = 3; // Empate
                 }
                 break;
+
             default:
         }
- //estos if se agregaron para determinar si el jugadro gano o perdio
-        if (resultado == 1) {
+
+        if (resultado == 2) {
             System.out.println("Haz ganado");
-        } else if (resultado == 2) {
+        } else if (resultado == 3) {
             System.out.println("Empate");
         } else {
             System.out.println("Gana el jugador 2");
         }
-    }
+	}
 }
+
 
 	  
 
