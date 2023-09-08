@@ -19,7 +19,7 @@ public class revision4 {
         Scanner scannerPlayer2 = new Scanner(System.in); // se ajustaron los nombres, se agrego otro scanner
         String player2 = scannerPlayer2.nextLine();
 
-        int resultado = 0; //se agrega el valor del resuñtado
+        int resultado = 0; //se agrega el valor del resultado
 
         switch (player1) { //modifique todo el swirch
             case "piedra":
@@ -41,7 +41,7 @@ public class revision4 {
                 break;
             default:
         }
- 
+ //estos if se agregaron para determinar si el jugadro gano o perdio
         if (resultado == 1) {
             System.out.println("Haz ganado");
         } else if (resultado == 2) {
